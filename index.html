@@ -7,14 +7,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;900&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
   <style>
     .font-brand {
-      font-family: 'Anton', sans-serif;
-      letter-spacing: 0.05em;
-    }
-    .font-mono-code {
-      font-family: 'Space Mono', monospace;
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 0.06em;
     }
     @media print {
       body {
@@ -31,24 +28,33 @@
     }
   </style>
 </head>
-<body class="bg-neutral-900 text-neutral-100 min-h-screen p-6 md:p-12 font-sans selection:bg-amber-400 selection:text-black">
+<body class="bg-neutral-950 text-neutral-100 min-h-screen p-4 md:p-10 font-sans selection:bg-[#EAA522] selection:text-black">
 
-  <!-- Encabezado -->
-  <header class="max-w-5xl mx-auto mb-10 flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-neutral-800 pb-6">
-    <div>
-      <h1 class="text-3xl md:text-4xl font-black tracking-wider uppercase text-amber-400 font-brand">
-        Dirty Monkeys Music Store
-      </h1>
-      <p class="text-sm text-neutral-400">
-        Tarjetas de regalo oficiales • Vinilos, CDs & Coleccionables • Bogotá, Colombia
-      </p>
+  <!-- Banner Superior Idéntico al Correo -->
+  <header class="max-w-5xl mx-auto mb-10 overflow-hidden rounded-2xl border border-neutral-800 shadow-2xl bg-[#141414]">
+    <!-- Franja mostaza centrada con logo y marca -->
+    <div class="bg-[#EAA522] py-4 px-6 flex items-center justify-center gap-3.5 border-b border-black/10">
+      <img src="https://res.cloudinary.com/x4s1wwoq/image/upload/v1789753386/logo.png" alt="Dirty Monkeys Logo" class="w-14 h-14 object-contain drop-shadow-sm">
+      <div class="text-left">
+        <div class="font-brand text-3xl md:text-4xl text-black leading-[0.9] uppercase tracking-wider">
+          DIRTY MONKEYS
+        </div>
+        <div class="font-brand text-xs md:text-sm text-black/80 tracking-[0.25em] uppercase mt-0.5">
+          MUSIC STORE
+        </div>
+      </div>
     </div>
-    <div class="flex gap-3 no-print">
-      <button onclick="window.print()" class="bg-neutral-800 hover:bg-neutral-700 text-neutral-200 font-bold px-4 py-2.5 rounded-lg transition-all text-xs flex items-center gap-2 border border-neutral-700">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+    <!-- Barra de subtítulo y botón de impresión -->
+    <div class="px-6 py-3 bg-[#171717] flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-neutral-400">
+      <p>
+        Tarjetas de regalo digitales oficiales • Vinilos, CDs & Coleccionables • Bogotá, Colombia
+      </p>
+      <button onclick="window.print()" class="no-print self-start sm:self-auto bg-neutral-900 hover:bg-neutral-800 text-neutral-200 font-bold px-3 py-1.5 rounded-lg transition-all text-xs flex items-center gap-2 border border-neutral-700">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
         </svg>
-        Imprimir vista
+        Imprimir
       </button>
     </div>
   </header>
@@ -56,32 +62,32 @@
   <!-- Contenedor de Tarjetas -->
   <main class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
 
-    <!-- TARJETA 1: 20 LUCAS -->
+    <!-- TARJETA 1: $30.000 -->
     <div class="flex flex-col gap-4">
-      <article class="card-container bg-[#f5a623] text-neutral-950 rounded-2xl overflow-hidden border-2 border-black shadow-2xl flex flex-col justify-between relative h-full">
+      <article class="card-container bg-[#EAA522] text-neutral-950 rounded-2xl overflow-hidden border-2 border-black shadow-2xl flex flex-col justify-between relative h-full">
         <div class="absolute -right-8 -top-8 w-28 h-28 bg-black/10 rounded-full pointer-events-none"></div>
         
-        <!-- Top / Marca con LOGO -->
-        <div class="p-6 pb-2 border-b-2 border-black/20 flex justify-between items-center">
+        <!-- Top con LOGO -->
+        <div class="p-6 pb-3 border-b-2 border-black/20 flex justify-between items-center">
           <div>
-            <span class="text-[10px] font-black uppercase tracking-widest bg-black text-amber-400 px-2 py-0.5 rounded">
+            <span class="text-[10px] font-black uppercase tracking-widest bg-black text-[#EAA522] px-2 py-0.5 rounded">
               Gift Card
             </span>
-            <h2 class="text-2xl font-black font-brand leading-none mt-2 uppercase">
+            <h2 class="text-3xl font-brand leading-none mt-2 uppercase text-black">
               Dirty Monkeys
             </h2>
-            <span class="text-xs font-semibold tracking-wider text-black/70">MUSIC STORE</span>
+            <span class="text-[11px] font-bold tracking-widest text-black/80 font-brand">MUSIC STORE</span>
           </div>
-          <img src="logo.png" alt="Dirty Monkeys Logo" class="w-12 h-12 object-contain drop-shadow">
+          <img src="https://res.cloudinary.com/x4s1wwoq/image/upload/v1789753386/logo.png" alt="Dirty Monkeys Logo" class="w-12 h-12 object-contain drop-shadow">
         </div>
 
         <!-- Centro / Monto -->
-        <div class="p-6 py-8 text-center bg-white/30 backdrop-blur-sm my-2">
-          <span class="text-xs uppercase font-bold tracking-widest text-neutral-800">Bono canjeable por</span>
-          <div class="text-4xl font-black font-brand tracking-tight text-black mt-1">
-            $30.000 <span class="text-xl">COP</span>
+        <div class="p-6 py-8 text-center bg-black/10 backdrop-blur-sm my-2 border-y border-black/10">
+          <span class="text-xs uppercase font-bold tracking-widest text-neutral-900">Bono canjeable por</span>
+          <div class="text-5xl font-brand tracking-tight text-black mt-1">
+            $30.000 <span class="text-2xl font-sans font-bold">COP</span>
           </div>
-          <p class="text-[11px] text-neutral-800 mt-2 font-medium">
+          <p class="text-[11px] text-neutral-900 mt-2 font-medium">
             Válido para Vinilos, CDs y coleccionables.
           </p>
         </div>
@@ -96,7 +102,7 @@
       </article>
 
       <!-- Botón de Pago 30k -->
-      <a href="https://mpago.li/24YDxii" target="_blank" rel="noopener noreferrer" class="no-print w-full bg-amber-400 hover:bg-amber-300 text-black font-black py-3.5 px-4 rounded-xl text-center shadow-lg transition-transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+      <a href="https://mpago.li/24YDxii" target="_blank" rel="noopener noreferrer" class="no-print w-full bg-[#EAA522] hover:bg-[#d6941b] text-black font-black py-3.5 px-4 rounded-xl text-center shadow-lg transition-transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
         <span>Comprar por $30.000</span>
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -104,30 +110,30 @@
       </a>
     </div>
 
-    <!-- TARJETA 2: 50 LUCAS -->
+    <!-- TARJETA 2: $50.000 -->
     <div class="flex flex-col gap-4">
-      <article class="card-container bg-[#111111] text-neutral-100 rounded-2xl overflow-hidden border-2 border-amber-400/80 shadow-2xl flex flex-col justify-between relative h-full">
-        <div class="absolute -right-8 -top-8 w-28 h-28 bg-amber-400/10 rounded-full pointer-events-none"></div>
+      <article class="card-container bg-[#141414] text-neutral-100 rounded-2xl overflow-hidden border-2 border-[#EAA522] shadow-2xl flex flex-col justify-between relative h-full">
+        <div class="absolute -right-8 -top-8 w-28 h-28 bg-[#EAA522]/10 rounded-full pointer-events-none"></div>
 
-        <!-- Top / Marca con LOGO -->
-        <div class="p-6 pb-2 border-b border-neutral-800 flex justify-between items-center">
+        <!-- Top con LOGO -->
+        <div class="p-6 pb-3 border-b border-neutral-800 flex justify-between items-center">
           <div>
-            <span class="text-[10px] font-black uppercase tracking-widest bg-amber-400 text-black px-2 py-0.5 rounded">
+            <span class="text-[10px] font-black uppercase tracking-widest bg-[#EAA522] text-black px-2 py-0.5 rounded">
               Gift Card
             </span>
-            <h2 class="text-2xl font-black font-brand leading-none mt-2 uppercase text-amber-400">
+            <h2 class="text-3xl font-brand leading-none mt-2 uppercase text-[#EAA522]">
               Dirty Monkeys
             </h2>
-            <span class="text-xs font-semibold tracking-wider text-neutral-400">MUSIC STORE</span>
+            <span class="text-[11px] font-bold tracking-widest text-neutral-400 font-brand">MUSIC STORE</span>
           </div>
-          <img src="logo.png" alt="Dirty Monkeys Logo" class="w-12 h-12 object-contain drop-shadow">
+          <img src="https://res.cloudinary.com/x4s1wwoq/image/upload/v1789753386/logo.png" alt="Dirty Monkeys Logo" class="w-12 h-12 object-contain drop-shadow">
         </div>
 
         <!-- Centro / Monto -->
-        <div class="p-6 py-8 text-center bg-neutral-900/60 my-2 border-y border-neutral-800/80">
+        <div class="p-6 py-8 text-center bg-neutral-900/80 my-2 border-y border-neutral-800">
           <span class="text-xs uppercase font-bold tracking-widest text-neutral-400">Bono canjeable por</span>
-          <div class="text-4xl font-black font-brand tracking-tight text-amber-400 mt-1">
-            $50.000 <span class="text-xl">COP</span>
+          <div class="text-5xl font-brand tracking-tight text-[#EAA522] mt-1">
+            $50.000 <span class="text-2xl font-sans font-bold text-white">COP</span>
           </div>
           <p class="text-[11px] text-neutral-400 mt-2 font-medium">
             Válido para Vinilos, CDs y coleccionables.
@@ -144,7 +150,7 @@
       </article>
 
       <!-- Botón de Pago 50k -->
-      <a href="https://mpago.li/2rxTeqH" target="_blank" rel="noopener noreferrer" class="no-print w-full bg-amber-400 hover:bg-amber-300 text-black font-black py-3.5 px-4 rounded-xl text-center shadow-lg transition-transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+      <a href="https://mpago.li/2rxTeqH" target="_blank" rel="noopener noreferrer" class="no-print w-full bg-[#EAA522] hover:bg-[#d6941b] text-black font-black py-3.5 px-4 rounded-xl text-center shadow-lg transition-transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
         <span>Comprar por $50.000</span>
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -152,30 +158,30 @@
       </a>
     </div>
 
-    <!-- TARJETA 3: 100 LUCAS -->
+    <!-- TARJETA 3: $100.000 -->
     <div class="flex flex-col gap-4">
-      <article class="card-container bg-gradient-to-b from-[#241e0a] to-[#121212] text-amber-100 rounded-2xl overflow-hidden border-2 border-amber-300 shadow-2xl flex flex-col justify-between relative ring-1 ring-amber-400/40 h-full">
-        <div class="absolute -right-8 -top-8 w-28 h-28 bg-amber-400/20 rounded-full pointer-events-none blur-xl"></div>
+      <article class="card-container bg-gradient-to-b from-[#211905] to-[#121212] text-amber-100 rounded-2xl overflow-hidden border-2 border-[#EAA522] shadow-2xl flex flex-col justify-between relative ring-1 ring-[#EAA522]/40 h-full">
+        <div class="absolute -right-8 -top-8 w-28 h-28 bg-[#EAA522]/20 rounded-full pointer-events-none blur-xl"></div>
 
-        <!-- Top / Marca con LOGO -->
-        <div class="p-6 pb-2 border-b border-amber-400/20 flex justify-between items-center">
+        <!-- Top con LOGO -->
+        <div class="p-6 pb-3 border-b border-[#EAA522]/20 flex justify-between items-center">
           <div>
-            <span class="text-[10px] font-black uppercase tracking-widest bg-gradient-to-r from-amber-300 to-amber-500 text-black px-2 py-0.5 rounded font-sans">
-              Gift Card
+            <span class="text-[10px] font-black uppercase tracking-widest bg-gradient-to-r from-amber-300 to-[#EAA522] text-black px-2 py-0.5 rounded">
+              Gift Card VIP
             </span>
-            <h2 class="text-2xl font-black font-brand leading-none mt-2 uppercase text-amber-300">
+            <h2 class="text-3xl font-brand leading-none mt-2 uppercase text-[#EAA522]">
               Dirty Monkeys
             </h2>
-            <span class="text-xs font-semibold tracking-wider text-amber-200/60">MUSIC STORE</span>
+            <span class="text-[11px] font-bold tracking-widest text-amber-200/70 font-brand">MUSIC STORE</span>
           </div>
-          <img src="logo.png" alt="Dirty Monkeys Logo" class="w-12 h-12 object-contain drop-shadow">
+          <img src="https://res.cloudinary.com/x4s1wwoq/image/upload/v1789753386/logo.png" alt="Dirty Monkeys Logo" class="w-12 h-12 object-contain drop-shadow">
         </div>
 
         <!-- Centro / Monto -->
-        <div class="p-6 py-8 text-center bg-black/40 my-2 border-y border-amber-400/20">
+        <div class="p-6 py-8 text-center bg-black/50 my-2 border-y border-[#EAA522]/20">
           <span class="text-xs uppercase font-bold tracking-widest text-amber-300/80">Bono canjeable por</span>
-          <div class="text-4xl font-black font-brand tracking-tight text-amber-300 mt-1 drop-shadow-md">
-            $100.000 <span class="text-xl">COP</span>
+          <div class="text-5xl font-brand tracking-tight text-[#EAA522] mt-1 drop-shadow-md">
+            $100.000 <span class="text-2xl font-sans font-bold text-white">COP</span>
           </div>
           <p class="text-[11px] text-amber-200/70 mt-2 font-medium">
             Válido para Vinilos, CDs y coleccionables.
@@ -184,7 +190,7 @@
 
         <!-- Bottom / Info -->
         <div class="p-6 pt-2">
-          <div class="text-[10px] text-amber-200/80 font-medium space-y-0.5 border-t border-amber-400/20 pt-2 text-center">
+          <div class="text-[10px] text-amber-200/80 font-medium space-y-0.5 border-t border-[#EAA522]/20 pt-2 text-center">
             <p class="text-amber-100 font-bold">📲 WhatsApp: 300 332 2907</p>
             <p>📸 IG / TikTok: @dmonkeysmusic</p>
           </div>
@@ -192,7 +198,7 @@
       </article>
 
       <!-- Botón de Pago 100k -->
-      <a href="https://mpago.li/1DtADXC" target="_blank" rel="noopener noreferrer" class="no-print w-full bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 hover:opacity-95 text-black font-black py-3.5 px-4 rounded-xl text-center shadow-lg transition-transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+      <a href="https://mpago.li/1DtADXC" target="_blank" rel="noopener noreferrer" class="no-print w-full bg-[#EAA522] hover:bg-[#d6941b] text-black font-black py-3.5 px-4 rounded-xl text-center shadow-lg transition-transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
         <span>Comprar por $100.000</span>
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -202,9 +208,10 @@
 
   </main>
 
-  <footer class="max-w-5xl mx-auto mt-12 pt-6 border-t border-neutral-800 text-center text-xs text-neutral-500 no-print">
-    <p>Pagos procesados de forma segura mediante PSE, Nequi, Daviplata y Tarjetas de Crédito/Débito.</p>
-    <p class="mt-1">Una vez confirmado el pago, recibirás el código único de tu tarjeta por WhatsApp o correo electrónico.</p>
+  <!-- Pie informativo -->
+  <footer class="max-w-5xl mx-auto mt-12 pt-6 border-t border-neutral-800 text-center text-xs text-neutral-400 no-print space-y-1.5">
+    <p>Pagos procesados de forma 100% segura mediante PSE, Nequi, Daviplata y Tarjetas de Crédito/Débito.</p>
+    <p class="text-neutral-300 font-semibold">⚡ Al confirmar tu pago, recibirás de inmediato el código de tu Gift Card al correo electrónico registrado en Mercado Pago.</p>
   </footer>
 
 </body>
