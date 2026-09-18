@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pago no completado - Dirty Monkeys Music Store</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  
+  <style>
+    .font-brand {
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 0.06em;
+    }
+    .bg-modern-grid {
+      background-color: #0b0b0d;
+      background-image: radial-gradient(rgba(234, 165, 34, 0.08) 1px, transparent 1px), radial-gradient(rgba(255, 255, 255, 0.03) 1px, #0b0b0d 1px);
+      background-size: 24px 24px;
+      background-position: 0 0, 12px 12px;
+    }
+  </style>
+</head>
+<body class="bg-modern-grid text-neutral-100 min-h-screen flex items-center justify-center p-4 md:p-12 font-sans selection:bg-[#EAA522] selection:text-black relative">
+
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[300px] bg-[#EAA522]/10 blur-[130px] pointer-events-none -z-10"></div>
+
+  <main class="max-w-2xl w-full bg-[#17171a] border border-neutral-800 rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.9)] relative">
+    
+    <!-- Banner Mostaza -->
+    <div class="bg-[#EAA522] py-5 px-8 flex items-center justify-center gap-4 border-b border-black/10">
+      <img src="https://res.cloudinary.com/x4s1wwoq/image/upload/v1789753386/logo.png" alt="Dirty Monkeys Logo" class="w-14 h-14 md:w-16 md:h-16 object-contain drop-shadow-sm">
+      <div class="text-left">
+        <div class="font-brand text-3xl md:text-5xl text-black leading-[0.9] uppercase tracking-wider">
+          DIRTY MONKEYS
+        </div>
+        <div class="font-brand text-xs md:text-sm text-black/80 tracking-[0.28em] uppercase mt-0.5">
+          MUSIC STORE
+        </div>
+      </div>
+    </div>
+
+    <!-- Mensaje de cancelación/error -->
+    <div class="p-8 md:p-12 text-center space-y-6">
+      
+      <div>
+        <div class="w-16 h-16 bg-amber-500/10 border border-amber-500/30 text-[#EAA522] rounded-full flex items-center justify-center mx-auto mb-4">
+          <i class="fa-solid fa-rotate-left text-2xl md:text-3xl"></i>
+        </div>
+        <span class="text-[11px] font-black uppercase tracking-widest bg-amber-500/15 text-[#EAA522] border border-amber-500/20 px-3 py-1 rounded-full">
+          Pago Cancelado o Interrumpido
+        </span>
+        <h1 class="text-4xl md:text-5xl font-brand uppercase text-white tracking-wide mt-4 mb-1">
+          No se completó la orden
+        </h1>
+        <p class="text-sm md:text-base text-neutral-400 max-w-md mx-auto">
+          No te preocupes, no se realizó ningún cobro en tu cuenta.
+        </p>
+      </div>
+
+      <!-- Cuadro de ayuda -->
+      <div class="bg-neutral-900/90 rounded-2xl p-6 text-left border border-neutral-800 space-y-2 text-xs md:text-sm text-neutral-300">
+        <p class="font-semibold text-white">¿Tuviste problemas con la pasarela?</p>
+        <p class="text-neutral-400 leading-relaxed">
+          Si tu banco rechazó el pago o prefieres pagar directamente por Nequi, Daviplata o PSE bancario sin pasar por Mercado Pago, escríbenos directamente a WhatsApp y te ayudamos al instante.
+        </p>
+      </div>
+
+      <!-- Botones de Acción -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+        <a href="index.html" class="w-full sm:w-auto flex-1 bg-[#EAA522] hover:bg-[#d89518] text-black font-black py-4 px-6 rounded-xl text-center shadow-lg transition-all duration-150 active:scale-[0.98] flex items-center justify-center gap-2 text-xs uppercase tracking-wider">
+          <i class="fa-solid fa-arrow-left text-[11px]"></i>
+          <span>Reintentar compra</span>
+        </a>
+
+        <a href="https://wa.me/573003322907?text=%C2%A1Hola%20Dirty%20Monkeys!%20Tuve%20un%20problema%20al%20pagar%20mi%20Gift%20Card%20en%20l%C3%ADnea,%20%C2%BFpuedo%20hacerlo%20por%20transferencia%20directa?" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="w-full sm:w-auto flex-1 bg-[#25D366] hover:bg-[#20ba59] text-black font-black py-4 px-6 rounded-xl text-center shadow-lg transition-all duration-150 active:scale-[0.98] flex items-center justify-center gap-2 text-xs uppercase tracking-wider">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>Pedir ayuda por WhatsApp</span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
