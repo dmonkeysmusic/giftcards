@@ -113,5 +113,19 @@
     </div>
   </main>
 
+<!-- Detección de estados Mercado Pago -->
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const status = urlParams.get('collection_status') || urlParams.get('status');
+
+    // Si el pago quedó pendiente (Efecty, transferencia demorada, etc.)
+    if (status === 'pending' || status === 'in_process') {
+      window.location.href = 'pendiente.html';
+    } 
+    // Si fue rechazado o cancelado, vuelve a la tienda
+    else if (status && status !== 'approved') {
+      window.location.href = 'index.html';
+    }
+  </script>
 </body>
 </html>
